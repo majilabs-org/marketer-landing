@@ -1,65 +1,128 @@
-import Image from "next/image";
+"use client";
+
+import { motion } from "motion/react";
+import starImg from "@/src/assets/star.png";
+import img1 from "@/src/assets/img-1.png";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div className="min-h-screen bg-[#fafafa] flex flex-col">
+      <div className="h-[60px] border-b border-[#e4e4e7]"></div>
+      <div className="pt-[80px] w-full flex-1 lg:px-16 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
+        <div className="flex justify-center">
+          <div className="cursor-pointer transition-all h-7 px-2.5 relative flex items-center font-medium text-sm bg-[#fafafa] border border-[#fff] rounded-full transition-shadow shadow-[0px_0px_0px_1px_rgba(9,9,11,0.08),0px_1px_2px_-1px_rgba(9,9,11,0.08),0px_2px_4px_0px_rgba(9,9,11,0.04)] hover:shadow-[0px_0px_0px_1px_rgba(9,9,11,0.08),0px_1px_2px_-1px_rgba(9,9,11,0.08),0px_2px_8px_0px_rgba(9,9,11,0.1)]">
+            <motion.div
+              className="absolute left-0 top-[-2px]"
+              initial={{ opacity: 0, x: 0 }}
+              animate={{ opacity: [0, 1, 1, 0], x: [0, 80] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeOut" }}
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              <motion.div
+                className="absolute top-[1px] right-0 flex items-center justify-center"
+                initial={{ scale: 0.9, opacity: 0.75 }}
+                animate={{
+                  rotate: [0, 360],
+                  opacity: [0.75, 1, 0.75, 1, 0.75, 1],
+                  scale: [0.9, 1.1, 0.9],
+                }}
+                transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+              >
+                <img
+                  className="absolute shrink-0 w-4 h-4 min-w-4 min-h-4"
+                  src={starImg.src}
+                  alt="star"
+                  width={16}
+                  height={16}
+                />
+              </motion.div>
+              <svg
+                width="60"
+                height="2"
+                viewBox="0 0 60 2"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  y="0.683594"
+                  width="59.6201"
+                  height="1"
+                  rx="0.5"
+                  fill="url(#paint0_linear_13259_339377)"
+                ></rect>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_13259_339377"
+                    x1="0"
+                    y1="1.18359"
+                    x2="59.6201"
+                    y2="1.18359"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stopColor="#F96816" stopOpacity="0"></stop>
+                    <stop
+                      offset="1"
+                      stopColor="#F96816"
+                      stopOpacity="0.3"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </motion.div>
+            Marketing is now software
+          </div>
+        </div>
+
+        <div className="leading-[100%] tracking-[-1.6px] text-[64px] font-medium text-center pt-[24px] pb-[12px] mx-auto max-w-[900px]">
+          AI agents trained to run your marketing on autopilot
+        </div>
+        <div className="text-[#52525b] font-medium leading-[150%] text-[18px] max-w-[600px] text-center mx-auto">
+          Build the documentation you've always wanted. Beautiful out of the
+          box, easy to maintain, and optimized for user engagement.
+        </div>
+
+        <div className="pt-[48px] relative">
+          <div className="pointer-none absolute h-[1px] left-0 right-0 -mx-16 bottom-[20px] bg-[#e4e4e7]" />
+          <div className="relative flex justify-center gap-3">
+            <div className="h-[38px] flex items-center justify-center px-4 cursor-pointer transition-all bg-[#fafafa] border border-[#fff] rounded-[6px] transition-shadow shadow-[0px_0px_0px_1px_rgba(9,9,11,0.08),0px_1px_2px_-1px_rgba(9,9,11,0.08),0px_2px_4px_0px_rgba(9,9,11,0.04)] hover:shadow-[0px_0px_0px_1px_rgba(9,9,11,0.08),0px_1px_2px_-1px_rgba(9,9,11,0.08),0px_2px_8px_0px_rgba(9,9,11,0.1)]">
+              <div className="text-[#18181b] font-medium">Talk to sales</div>
+            </div>
+            <div
+              className="h-[38px] flex items-center justify-center px-4 cursor-pointer transition-all bg-[#27272a] hover:bg-[#3f3f46] rounded-[6px]"
+              style={{
+                boxShadow:
+                  "0px 0.75px 0px 0px rgba(255,255,255,0.2) inset,0px 1px 2px 0px rgba(0,0,0,0.4),0px 0px 0px 1px rgba(24,24,27,1)",
+              }}
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              <div className="text-white/88 font-medium">Get started</div>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+
+      <div className="pt-[80px] w-full flex-1 px-6 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
+        <div className="mx-auto w-min relative p-3 pb-0 rounded-t-[21px] overflow-hidden border border-b-0 bg-[#18181B]/2 border-[#e4e4e7]">
+          <div className="flex justify-center pt-[1px] relative w-[1100px]">
+            <div className="!absolute left-0 top-0 right-0 h-[calc(100%+10px)] rounded-t-[9px]">
+              <div
+                className="absolute inset-0 rounded-[9px]"
+                style={{ boxShadow: "inset 0 0 0 1px #18181B10" }}
+              />
+            </div>
+            <div
+              className="w-[1100px] h-[410px] w-full pt-[1px] px-[1px] bg-white rounded-t-[9px]"
+              style={{
+                boxShadow:
+                  "0 143px 40px 0 rgba(0,0,0,0),0 91px 37px 0 rgba(0,0,0,.01),0 51px 31px 0 rgba(0,0,0,.05),0 23px 23px 0 rgba(0,0,0,.09),0 6px 13px 0 rgba(0,0,0,.1)",
+              }}
+            >
+              <img
+                src={img1.src}
+                className="rounded-t-[8px] max-w-full h-[688px] w-full"
+              />
+            </div>
+          </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
