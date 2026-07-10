@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="leading-[100%] tracking-[-1.6px] text-[64px] font-medium text-center pt-[24px] pb-[12px] mx-auto max-w-[900px]">
+        <div className="leading-[100%] tracking-[-1.6px] text-[64px] font-medium text-center pt-[24px] pb-[20px] mx-auto max-w-[900px]">
           AI agents trained to run your marketing on autopilot
         </div>
         <div className="text-[#52525b] font-medium leading-[150%] text-[18px] max-w-[600px] text-center mx-auto">
@@ -88,7 +88,7 @@ export default function Home() {
           24/7 — pausing losers and scaling winners automatically.
         </div>
 
-        <div className="pt-[40px] relative">
+        <div className="pt-[24px] relative">
           <div className="relative flex justify-center gap-3">
             <div className="h-[38px] flex items-center justify-center px-4 cursor-pointer transition-all bg-[#fafafa] border border-[#fff] rounded-[6px] transition-shadow shadow-[0px_0px_0px_1px_rgba(9,9,11,0.08),0px_1px_2px_-1px_rgba(9,9,11,0.08),0px_2px_4px_0px_rgba(9,9,11,0.04)] hover:shadow-[0px_0px_0px_1px_rgba(9,9,11,0.08),0px_1px_2px_-1px_rgba(9,9,11,0.08),0px_2px_8px_0px_rgba(9,9,11,0.1)]">
               <div className="text-[#18181b] font-medium">Talk to sales</div>
