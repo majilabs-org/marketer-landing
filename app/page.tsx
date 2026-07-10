@@ -84,8 +84,8 @@ export default function Home() {
           AI agents trained to run your marketing on autopilot
         </div>
         <div className="text-[#52525b] font-medium leading-[150%] text-[18px] max-w-[600px] text-center mx-auto">
-          Build the documentation you've always wanted. Beautiful out of the
-          box, easy to maintain, and optimized for user engagement.
+          AI agents that run your ad campaigns across Meta, Google, and Snapchat
+          24/7 — pausing losers and scaling winners automatically.
         </div>
 
         <div className="pt-[40px] relative">
