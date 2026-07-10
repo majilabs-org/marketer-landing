@@ -88,8 +88,7 @@ export default function Home() {
           box, easy to maintain, and optimized for user engagement.
         </div>
 
-        <div className="pt-[48px] relative">
-          <div className="pointer-none absolute h-[1px] left-0 right-0 -mx-16 bottom-[20px] bg-[#e4e4e7]" />
+        <div className="pt-[40px] relative">
           <div className="relative flex justify-center gap-3">
             <div className="h-[38px] flex items-center justify-center px-4 cursor-pointer transition-all bg-[#fafafa] border border-[#fff] rounded-[6px] transition-shadow shadow-[0px_0px_0px_1px_rgba(9,9,11,0.08),0px_1px_2px_-1px_rgba(9,9,11,0.08),0px_2px_4px_0px_rgba(9,9,11,0.04)] hover:shadow-[0px_0px_0px_1px_rgba(9,9,11,0.08),0px_1px_2px_-1px_rgba(9,9,11,0.08),0px_2px_8px_0px_rgba(9,9,11,0.1)]">
               <div className="text-[#18181b] font-medium">Talk to sales</div>
@@ -107,38 +106,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="pt-[50px] w-full flex-1 px-6 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
-        <div className="mx-auto w-min relative p-3 pb-0 rounded-t-[21px] overflow-hidden border border-b-0 bg-[#18181B]/2 border-[#e4e4e7]">
-          <div className="flex justify-center pt-[1px] relative w-[1100px]">
-            <div className="!absolute left-0 top-0 right-0 h-[calc(100%+10px)] rounded-t-[9px]">
-              <div
-                className="absolute inset-0 rounded-[9px]"
-                style={{ boxShadow: "inset 0 0 0 1px #18181B10" }}
-              />
-            </div>
-            <div
-              className="w-[1100px] h-[410px] w-full pt-[1px] px-[1px] bg-white rounded-t-[9px]"
-              style={{
-                boxShadow:
-                  "0 143px 40px 0 rgba(0,0,0,0),0 91px 37px 0 rgba(0,0,0,.01),0 51px 31px 0 rgba(0,0,0,.05),0 23px 23px 0 rgba(0,0,0,.09),0 6px 13px 0 rgba(0,0,0,.1)",
-              }}
-            >
-              <img
-                src={img1.src}
-                className="rounded-t-[8px] max-w-full h-[688px] w-full"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <BrandSections />
       <div>
-        <div className="border-t border-[#e4e4e7] h-[2px] bg-white" />
-        <div className="w-full flex-1 p-1 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
-          <div className="w-full h-[550px] relative">
-            <div className="rounded-md overflow-hidden absolute inset-0 border border-[#e4e4e7]">
-              <div className="absolute inset-0 opacity-75">
+        <div className="w-full flex-1 p-1.5 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7] pt-[50px]">
+          <div className="w-full h-[550px] relative overflow-hidden">
+            <div className="rounded-md overflow-hidden absolute inset-0 border border-[#e6e6ef]">
+              <div
+                className="absolute inset-0 opacity-75"
+                style={{
+                  filter: "grayscale(1) brightness(1) blur(0px) contrast(120)",
+                }}
+              >
                 <img
                   src={img3.src}
                   className="absolute top-0 right-0 w-full h-full object-cover opacity-50"
@@ -157,10 +134,49 @@ export default function Home() {
                   }}
                 />
               </div>
-              {/* <img
+              <img
                 src={img3.src}
                 className="absolute top-0 right-0 w-full h-full object-cover opacity-75"
-              /> */}
+              />
+            </div>
+            <div className="px-[56px] pt-[56px] z-10 relative">
+              <img
+                src={img2.src}
+                className="w-full h-full object-fit rounded-lg"
+                style={{
+                  boxShadow:
+                    "0 0 0 1px rgba(0,0,0,0.08),0 781px 219px 0 rgba(0,0,0,0.00),0 500px 200px 0 rgba(0,0,0,0.01),0 281px 169px 0 rgba(0,0,0,0.05),0 125px 125px 0 rgba(0,0,0,0.09),0 31px 69px 0 rgba(0,0,0,0.10)",
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <BrandSections />
+      <div>
+        <div className="border-t border-[#e4e4e7] h-[2px] bg-white" />
+        <div className="pt-[80px] w-full flex-1 px-6 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
+          <div className="mx-auto w-min relative p-3 pb-0 rounded-t-[21px] overflow-hidden border border-b-0 bg-[#18181B]/2 border-[#e4e4e7]">
+            <div className="flex justify-center pt-[1px] relative w-[1100px]">
+              <div className="!absolute left-0 top-0 right-0 h-[calc(100%+10px)] rounded-t-[9px]">
+                <div
+                  className="absolute inset-0 rounded-[9px]"
+                  style={{ boxShadow: "inset 0 0 0 1px #18181B10" }}
+                />
+              </div>
+              <div
+                className="w-[1100px] h-[410px] w-full pt-[1px] px-[1px] bg-white rounded-t-[9px]"
+                style={{
+                  boxShadow:
+                    "0 143px 40px 0 rgba(0,0,0,0),0 91px 37px 0 rgba(0,0,0,.01),0 51px 31px 0 rgba(0,0,0,.05),0 23px 23px 0 rgba(0,0,0,.09),0 6px 13px 0 rgba(0,0,0,.1)",
+                }}
+              >
+                <img
+                  src={img1.src}
+                  className="rounded-t-[8px] max-w-full h-[688px] w-full"
+                />
+              </div>
             </div>
           </div>
         </div>
