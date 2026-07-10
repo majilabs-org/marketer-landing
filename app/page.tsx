@@ -99,7 +99,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="pt-[80px] w-full flex-1 px-6 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
+      <div className="pt-[50px] w-full flex-1 px-6 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
         <div className="mx-auto w-min relative p-3 pb-0 rounded-t-[21px] overflow-hidden border border-b-0 bg-[#18181B]/2 border-[#e4e4e7]">
           <div className="flex justify-center pt-[1px] relative w-[1100px]">
             <div className="!absolute left-0 top-0 right-0 h-[calc(100%+10px)] rounded-t-[9px]">
@@ -122,6 +122,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div>
+        <div className="border-t border-[#e4e4e7] h-[2px] bg-white" />
+        <div className="pt-[80px] w-full flex-1 px-6 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]"></div>
       </div>
     </div>
   );
