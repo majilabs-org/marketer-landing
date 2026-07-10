@@ -3,11 +3,19 @@
 import { motion } from "motion/react";
 import starImg from "@/src/assets/star.png";
 import img1 from "@/src/assets/img-1.png";
+import img2 from "@/src/assets/img-2.png";
+import img3 from "@/src/assets/img-3.webp";
+import Logo from "@/src/components/logo";
+import BrandSections from "@/src/components/brands-sections";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#fafafa] flex flex-col">
-      <div className="h-[60px] border-b border-[#e4e4e7]"></div>
+      <div className="h-[60px] border-b border-[#e4e4e7] flex items-center">
+        <div className="max-w-[1200px] mx-auto w-full px-8">
+          <Logo />
+        </div>
+      </div>
       <div className="pt-[80px] w-full flex-1 lg:px-16 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
         <div className="flex justify-center">
           <div className="cursor-pointer transition-all h-7 px-2.5 relative flex items-center font-medium text-sm bg-[#fafafa] border border-[#fff] rounded-full transition-shadow shadow-[0px_0px_0px_1px_rgba(9,9,11,0.08),0px_1px_2px_-1px_rgba(9,9,11,0.08),0px_2px_4px_0px_rgba(9,9,11,0.04)] hover:shadow-[0px_0px_0px_1px_rgba(9,9,11,0.08),0px_1px_2px_-1px_rgba(9,9,11,0.08),0px_2px_8px_0px_rgba(9,9,11,0.1)]">
@@ -124,9 +132,43 @@ export default function Home() {
         </div>
       </div>
 
+      <BrandSections />
       <div>
         <div className="border-t border-[#e4e4e7] h-[2px] bg-white" />
-        <div className="pt-[80px] w-full flex-1 px-6 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]"></div>
+        <div className="w-full flex-1 p-1 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
+          <div className="w-full h-[550px] relative">
+            <div className="rounded-md overflow-hidden absolute inset-0 border border-[#e4e4e7]">
+              <div className="absolute inset-0 opacity-75">
+                <img
+                  src={img3.src}
+                  className="absolute top-0 right-0 w-full h-full object-cover opacity-50"
+                />
+                <div
+                  className="absolute inset-0 pointer-events-none"
+                  style={{
+                    imageRendering: "pixelated",
+                    backgroundImage:
+                      'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAu0lEQVQ4T6WSMQqFMBBEE2wDXiVgG8gtglilCuIpcoogVqlEPIVgK3gVIa2Qzw9YbIpttlqGgbcMM5wxlr33LMbI/nccx3I/PQwD0LXPj+OgAaSUBWCtLZ+2bSv308uyAF37/HkeGkAIASL0fQ8yT9MEdO3z67poAKUUiDDPM8i87zvQtc/f96UBmqZBazTG4Ds4z5MG6LoOrTGEgO8gpUQDtG2L1uicw3dw3zcNoLVGa1zXFd9BzpkE+AFp94/4eKx9+AAAAABJRU5ErkJggg==")',
+                    backgroundPosition: "0 0",
+                    backgroundRepeat: "repeat",
+                    backgroundSize: "16px 16px",
+                    mixBlendMode: "screen",
+                    zIndex: 1,
+                  }}
+                />
+              </div>
+              {/* <img
+                src={img3.src}
+                className="absolute top-0 right-0 w-full h-full object-cover opacity-75"
+              /> */}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div className="border-t border-[#e4e4e7] h-[2px] bg-white" />
+        <div className="pt-[80px] w-full flex-1 p-2 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]"></div>
       </div>
     </div>
   );
