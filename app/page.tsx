@@ -8,6 +8,7 @@ import img3 from "@/src/assets/img-3.webp";
 import Logo from "@/src/components/logo";
 import BrandSections from "@/src/components/brands-sections";
 import FaqSection from "@/src/components/faq-section";
+import TrustedBy from "@/src/components/trusted-by";
 import Footer from "@/src/components/footer";
 
 export default function Home() {
@@ -157,6 +158,7 @@ export default function Home() {
 
       <BrandSections />
       <FaqSection />
+      <TrustedBy />
       <div>
         <div className="border-t border-[#e4e4e7] h-[2px] bg-white" />
         <div className="pt-[80px] w-full flex-1 px-6 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
