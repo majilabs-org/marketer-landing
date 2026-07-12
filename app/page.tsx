@@ -5,7 +5,7 @@ import starImg from "@/src/assets/star.png";
 import img1 from "@/src/assets/img-1.png";
 import img2 from "@/src/assets/img-2.png";
 import img3 from "@/src/assets/img-3.webp";
-import Logo from "@/src/components/logo";
+import Header from "@/src/components/header";
 import BrandSections from "@/src/components/brands-sections";
 import FaqSection from "@/src/components/faq-section";
 import TrustedBy from "@/src/components/trusted-by";
@@ -17,11 +17,7 @@ import CarouselSection from "@/src/components/carousel-section";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#fafafa] flex flex-col">
-      <div className="h-[60px] border-b border-[#e4e4e7] flex items-center">
-        <div className="max-w-[1200px] mx-auto w-full px-8">
-          <Logo />
-        </div>
-      </div>
+      <Header />
       <div className="pt-[80px] w-full flex-1 lg:px-16 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
         <div className="flex justify-center">
           <div className="cursor-pointer transition-all h-7 px-2.5 relative flex items-center font-medium text-sm bg-[#fafafa] border border-[#fff] rounded-full transition-shadow shadow-[0px_0px_0px_1px_rgba(9,9,11,0.08),0px_1px_2px_-1px_rgba(9,9,11,0.08),0px_2px_4px_0px_rgba(9,9,11,0.04)] hover:shadow-[0px_0px_0px_1px_rgba(9,9,11,0.08),0px_1px_2px_-1px_rgba(9,9,11,0.08),0px_2px_8px_0px_rgba(9,9,11,0.1)]">
