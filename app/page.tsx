@@ -12,6 +12,7 @@ import TrustedBy from "@/src/components/trusted-by";
 import Footer from "@/src/components/footer";
 import GetStartedSection from "@/src/components/get-started-section";
 import BenefitsSection from "@/src/components/benefits-section";
+import CarouselSection from "@/src/components/carousel-section";
 
 export default function Home() {
   return (
@@ -159,6 +160,7 @@ export default function Home() {
       </div>
 
       <BrandSections />
+      <CarouselSection />
       <FaqSection />
       <TrustedBy />
       <div>
