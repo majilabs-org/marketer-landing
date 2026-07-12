@@ -33,10 +33,10 @@ export default function Footer() {
 
           <div className="flex items-center gap-2 shrink-0">
             <button className="h-9 px-4 rounded-[6px] bg-white text-[#18181b] text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer">
-              Sign up
+              Get started
             </button>
             <button className="h-9 pl-4 pr-2.5 rounded-[6px] bg-[#1a1a1a] border border-white/10 text-white text-sm font-medium flex items-center gap-2 hover:bg-[#222] transition-colors cursor-pointer">
-              Book demo
+              Talk to sales
             </button>
           </div>
         </div>
