@@ -159,7 +159,7 @@ export default function BenefitsSection() {
               <path
                 d="M1201 0C890.963 400.95 406 400.95 0 400.95V481.5H1201V0Z"
                 fill="url(#svg1318973209_528_paint0_linear_3165_46189)"
-                fill-opacity="0.1"
+                fillOpacity="0.1"
               ></path>
               <defs>
                 <linearGradient
@@ -170,8 +170,8 @@ export default function BenefitsSection() {
                   y2="314.067"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#F5F5F5"></stop>
-                  <stop offset="1" stop-color="#CBCBCB"></stop>
+                  <stop stopColor="#F5F5F5"></stop>
+                  <stop offset="1" stopColor="#CBCBCB"></stop>
                 </linearGradient>
               </defs>
             </svg>
