@@ -10,6 +10,8 @@ import BrandSections from "@/src/components/brands-sections";
 import FaqSection from "@/src/components/faq-section";
 import TrustedBy from "@/src/components/trusted-by";
 import Footer from "@/src/components/footer";
+import GetStartedSection from "@/src/components/get-started-section";
+import BenefitsSection from "@/src/components/benefits-section";
 
 export default function Home() {
   return (
@@ -187,6 +189,8 @@ export default function Home() {
         </div>
       </div>
 
+      <BenefitsSection />
+      {/* <GetStartedSection /> */}
       <Footer />
     </div>
   );
