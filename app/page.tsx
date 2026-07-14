@@ -10,9 +10,9 @@ import BrandSections from "@/src/components/brands-sections";
 import FaqSection from "@/src/components/faq-section";
 import TrustedBy from "@/src/components/trusted-by";
 import Footer from "@/src/components/footer";
-import GetStartedSection from "@/src/components/get-started-section";
 import BenefitsSection from "@/src/components/benefits-section";
 import CarouselSection from "@/src/components/carousel-section";
+import CaseStudiesSection from "@/src/components/case-studies-section";
 
 export default function Home() {
   return (
@@ -157,6 +157,7 @@ export default function Home() {
 
       <BrandSections />
       <CarouselSection />
+      <CaseStudiesSection />
       <FaqSection />
       <TrustedBy />
       <div>
