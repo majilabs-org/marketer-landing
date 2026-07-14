@@ -43,7 +43,6 @@ export default function GetStartedSection() {
       <div className="border-t border-[#e4e4e7] h-[2px] bg-white" />
       <div className="pt-[80px] w-full flex-1 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
         <div className="relative h-[400px] overflow-hidden [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_92%)]">
-          {/* Shared icon gradient + inner-shadow filter */}
           <svg className="h-0 w-0 absolute" aria-hidden="true">
             <defs>
               <filter
@@ -100,7 +99,6 @@ export default function GetStartedSection() {
             </defs>
           </svg>
 
-          {/* Lightning */}
           <Block x={3} y={4} state="active">
             <svg
               width="29"
@@ -120,7 +118,6 @@ export default function GetStartedSection() {
             </svg>
           </Block>
 
-          {/* Wallet / card */}
           <Block x={5} y={5}>
             <svg
               width="29"
@@ -144,7 +141,6 @@ export default function GetStartedSection() {
             </svg>
           </Block>
 
-          {/* Sparkles */}
           <Block x={4} y={3}>
             <svg
               width="29"
@@ -164,7 +160,6 @@ export default function GetStartedSection() {
             </svg>
           </Block>
 
-          {/* Shopping bag */}
           <Block x={6} y={4}>
             <svg
               width="29"
@@ -188,7 +183,6 @@ export default function GetStartedSection() {
             </svg>
           </Block>
 
-          {/* Puzzle */}
           <Block x={8} y={4} state="half">
             <svg
               width="29"
@@ -208,7 +202,6 @@ export default function GetStartedSection() {
             </svg>
           </Block>
 
-          {/* Globe */}
           <Block x={7} y={2}>
             <svg
               width="29"
@@ -228,7 +221,6 @@ export default function GetStartedSection() {
             </svg>
           </Block>
 
-          {/* Star */}
           <Block x={9} y={2} state="half">
             <svg
               width="28"
@@ -248,7 +240,6 @@ export default function GetStartedSection() {
             </svg>
           </Block>
 
-          {/* Image */}
           <Block x={10} y={3} state="half">
             <svg
               width="28"
@@ -268,7 +259,6 @@ export default function GetStartedSection() {
             </svg>
           </Block>
 
-          {/* Cart */}
           <Block x={13} y={4} state="half">
             <svg
               width="29"
@@ -286,7 +276,6 @@ export default function GetStartedSection() {
             </svg>
           </Block>
 
-          {/* Dollar circle */}
           <Block x={13} y={2} state="half">
             <svg
               width="28"
@@ -310,7 +299,6 @@ export default function GetStartedSection() {
             </svg>
           </Block>
 
-          {/* List / menu */}
           <Block x={14} y={3} state="active">
             <svg
               width="28"
@@ -334,7 +322,6 @@ export default function GetStartedSection() {
             </svg>
           </Block>
 
-          {/* Tag */}
           <Block x={14} y={5} state="active">
             <svg
               width="29"
@@ -354,7 +341,6 @@ export default function GetStartedSection() {
             </svg>
           </Block>
 
-          {/* Envelope */}
           <Block x={16} y={3}>
             <svg
               width="29"
@@ -376,7 +362,6 @@ export default function GetStartedSection() {
             </svg>
           </Block>
 
-          {/* Bell */}
           <Block x={18} y={3}>
             <svg
               width="28"
@@ -400,7 +385,6 @@ export default function GetStartedSection() {
             </svg>
           </Block>
 
-          {/* Browser / bullhorn */}
           <Block x={17} y={5}>
             <svg
               width="29"

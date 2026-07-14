@@ -37,11 +37,6 @@ function Block({
   );
 }
 
-/* ------------------------------------------------------------------ */
-/* Icons — each is a single reusable SVG so blocks can be duplicated   */
-/* freely just by referencing them.                                    */
-/* ------------------------------------------------------------------ */
-
 function IconLightning() {
   return (
     <svg width="24" height="24" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -294,7 +289,6 @@ export default function GetStartedSection() {
       <div className="w-full flex-1 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
         <div className="relative h-[300px]">
           <div className="absolute inset-0 overflow-hidden [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_92%)]">
-            {/* Shared icon gradient + inner-shadow filter */}
             <svg className="h-0 w-0 absolute" aria-hidden="true">
               <defs>
                 <filter
@@ -351,7 +345,6 @@ export default function GetStartedSection() {
               </defs>
             </svg>
 
-            {/* ---------------- Left cluster (x 4-8) ---------------- */}
             <Block x={4} y={3}>
               <IconLightning />
             </Block>
@@ -383,7 +376,6 @@ export default function GetStartedSection() {
               <IconStar />
             </Block>
 
-            {/* ---------------- Center row (same row as dollar & bell) ---------------- */}
             <Block x={10} y={2} state="half">
               <IconWallet />
             </Block>
@@ -394,7 +386,6 @@ export default function GetStartedSection() {
               <IconBag />
             </Block>
 
-            {/* ---------------- Right cluster (x 14-18) ---------------- */}
             <Block x={14} y={3} state="active">
               <IconList />
             </Block>

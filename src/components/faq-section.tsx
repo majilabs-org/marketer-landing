@@ -59,7 +59,6 @@ export default function FaqSection() {
       <div className="border-t border-[#e4e4e7] h-[2px] bg-white" />
       <div className="w-full max-w-[1200px] mx-auto border-l border-r border-[#e4e4e7]">
         <div className="grid md:grid-cols-5">
-          {/* Left column */}
           <div className="md:col-span-2 py-6 px-6 md:p-10 lg:p-12">
             <h2 className="font-medium text-5xl tracking-[-1.5px] text-[#18181b]">
               FAQ
@@ -71,7 +70,6 @@ export default function FaqSection() {
             </p>
           </div>
 
-          {/* Right column — accordion */}
           <div className="md:col-span-3 pt-6 px-6 md:px-4 md:pt-10 md:pb-4 lg:pt-12">
             <div className="-space-y-1">
               {faqs.map((faq, i) => {
@@ -128,7 +126,6 @@ export default function FaqSection() {
             </div>
           </div>
 
-          {/* Mobile note */}
           <div className="md:hidden">
             <p className="p-6 text-[#52525b]">
               Read some of the most asked questions around Marketer. If you

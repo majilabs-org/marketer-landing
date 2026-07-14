@@ -13,6 +13,11 @@ import Footer from "@/src/components/footer";
 import BenefitsSection from "@/src/components/benefits-section";
 import CarouselSection from "@/src/components/carousel-section";
 import CaseStudiesSection from "@/src/components/case-studies-section";
+import ConnectYourAccounts from "@/src/components/connect-your-accounts";
+import AskAnyQuestionSection from "@/src/components/ask-any-question-section";
+import ResearchWebsitesSection from "@/src/components/research-websites-section";
+import ScrapingSection from "@/src/components/scraping-section";
+import AgentRunsAccountSection from "@/src/components/agent-runs-account-section";
 
 export default function Home() {
   return (
@@ -157,6 +162,21 @@ export default function Home() {
 
       <BrandSections />
       <CarouselSection />
+
+      <div className="overflow-hidden">
+        <div className="border-t border-[#e4e4e7] h-[2px] bg-white" />
+        <div className="w-full flex-1 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7] grid grid-cols-2">
+          <AskAnyQuestionSection />
+          <AgentRunsAccountSection />
+        </div>
+      </div>
+      <div>
+        <div className="border-t border-[#e4e4e7] h-[2px] bg-white" />
+        <div className="w-full flex-1 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7] py-14">
+          <ConnectYourAccounts />
+        </div>
+      </div>
+
       <CaseStudiesSection />
       <FaqSection />
       <TrustedBy />
@@ -189,7 +209,6 @@ export default function Home() {
       </div>
 
       <BenefitsSection />
-      {/* <GetStartedSection /> */}
       <Footer />
     </div>
   );
