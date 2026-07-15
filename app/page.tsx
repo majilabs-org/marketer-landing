@@ -19,6 +19,7 @@ import AlwaysOptimisingSection from "@/src/components/always-optimising-section"
 import ActivityLogSection from "@/src/components/activity-log-section";
 import AgentRunsAccountSection from "@/src/components/agent-runs-account-section";
 import AskOnSlackSection from "@/src/components/ask-on-slack-section";
+import SetUpInMinutesSection from "@/src/components/set-up-in-minutes-section";
 
 export default function Home() {
   return (
@@ -193,6 +194,8 @@ export default function Home() {
           <AskOnSlackSection />
         </div>
       </div>
+
+      <SetUpInMinutesSection />
 
       <CaseStudiesSection />
       <FaqSection />
