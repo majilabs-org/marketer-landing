@@ -2,7 +2,8 @@
 
 import { motion } from "motion/react";
 import starImg from "@/src/assets/star.png";
-import img2 from "@/src/assets/img-2.png";
+// import img2 from "@/src/assets/img-2.png";
+import dashboardImg from "@/src/assets/dashboard.png";
 import img3 from "@/src/assets/img-3.webp";
 import Header from "@/src/components/header";
 import BrandSections from "@/src/components/brands-sections";
@@ -20,6 +21,7 @@ import ActivityLogSection from "@/src/components/activity-log-section";
 import AgentRunsAccountSection from "@/src/components/agent-runs-account-section";
 import AskOnSlackSection from "@/src/components/ask-on-slack-section";
 import SetUpInMinutesSection from "@/src/components/set-up-in-minutes-section";
+import ComparisonSection from "@/src/components/comparison-section";
 
 export default function Home() {
   return (
@@ -150,7 +152,7 @@ export default function Home() {
             </div>
             <div className="px-[56px] pt-[56px] z-10 relative">
               <img
-                src={img2.src}
+                src={dashboardImg.src}
                 className="w-full h-full object-fit rounded-lg"
                 style={{
                   boxShadow:
@@ -196,6 +198,8 @@ export default function Home() {
       </div>
 
       <SetUpInMinutesSection />
+
+      <ComparisonSection />
 
       <CaseStudiesSection />
       <FaqSection />

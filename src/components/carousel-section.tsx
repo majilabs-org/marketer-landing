@@ -5,6 +5,9 @@ import { motion } from "motion/react";
 import img1 from "@/src/assets/img-3.webp";
 import img2 from "@/src/assets/image-4.webp";
 import img3 from "@/src/assets/image-5.webp";
+import campaigns from "@/src/assets/campaigns.png";
+import analytics from "@/src/assets/analytics.png";
+import creatives from "@/src/assets/creatives.png";
 
 const DITHER_TILE =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAu0lEQVQ4T6WSMQqFMBBEE2wDXiVgG8gtglilCuIpcoogVqlEPIVgK3gVIa2Qzw9YbIpttlqGgbcMM5wxlr33LMbI/nccx3I/PQwD0LXPj+OgAaSUBWCtLZ+2bSv308uyAF37/HkeGkAIASL0fQ8yT9MEdO3z67poAKUUiDDPM8i87zvQtc/f96UBmqZBazTG4Ds4z5MG6LoOrTGEgO8gpUQDtG2L1uicw3dw3zcNoLVGa1zXFd9BzpkE+AFp94/4eKx9+AAAAABJRU5ErkJggg==";
@@ -45,6 +48,7 @@ function DitheredImage({ src, alt }: { src: string; alt: string }) {
 }
 
 type Slide = {
+  bgImage: string;
   image: string;
   title: string;
   description: string;
@@ -52,22 +56,25 @@ type Slide = {
 
 const slides: Slide[] = [
   {
-    image: img1.src,
-    title: "Live performance dashboard",
+    bgImage: img1.src,
+    image: campaigns.src,
+    title: "Every campaign in one place",
     description:
-      "ROAS, CAC, and spend across Meta, Google, and Snapchat — updating in real time as your agents work.",
+      "Manage campaigns, ad sets, and ads across Meta, Google, TikTok, and Snapchat — spend, revenue, and budget side by side.",
   },
   {
-    image: img2.src,
-    title: "Autonomous optimization",
+    bgImage: img2.src,
+    image: analytics.src,
+    title: "Analytics that update in real time",
     description:
-      "Agents pause underperformers and scale winners every hour, so nothing sits burning budget overnight.",
+      "ROAS, CAC, impressions, and CTR across every channel, refreshed as your agents work so you always know what's driving revenue.",
   },
   {
-    image: img3.src,
-    title: "Briefings in Slack",
+    bgImage: img3.src,
+    image: creatives.src,
+    title: "Creatives ranked by performance",
     description:
-      "Wake up to a morning brief of revenue, spend, and every decision your agents made while you slept.",
+      "See every creative with ROAS, spend, and revenue attached, so your best-performing ads rise to the top automatically.",
   },
 ];
 
@@ -232,15 +239,21 @@ export default function CarouselSection() {
                 style={{ width: `${SLIDE_W}px` }}
               >
                 <div className="relative rounded-lg border border-[#e6e6ef] w-full aspect-[544/490] max-h-[490px] overflow-hidden bg-white">
-                  <DitheredImage src={slide.image} alt={slide.title} />
-                  <div className="absolute inset-0 px-[34px] pt-[80px] z-10">
+                  <DitheredImage src={slide.bgImage} alt={slide.title} />
+                  <div className="absolute inset-0 pl-[24px] pt-[30px] z-10 -right-[20px]">
                     <div
-                      className="w-full h-full rounded-t-lg bg-white"
+                      className="w-full h-full rounded-t-lg bg-white overflow-hidden"
                       style={{
                         boxShadow:
                           "0 0 0 1px rgba(0,0,0,0.08),0 31px 69px 0 rgba(0,0,0,0.10),0 125px 125px 0 rgba(0,0,0,0.09)",
                       }}
-                    />
+                    >
+                      <img
+                        src={slide.image}
+                        alt={slide.title}
+                        className="w-full h-full object-cover object-left-top"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="px-2 pt-4">
