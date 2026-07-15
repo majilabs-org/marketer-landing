@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
+import { TelescopeIcon } from "lucide-react";
 
 const SLOTS = [
   { y: 0, scale: 1 },
@@ -301,7 +302,7 @@ function Deck() {
     Array.from({ length: 4 }, (_, t) => ({
       id: t,
       level: 3 - t,
-      slug: randomSlug(),
+      slug: SLUGS[t % SLUGS.length],
       variant: t % 3,
     })),
   );
@@ -356,45 +357,26 @@ function Deck() {
   );
 }
 
-function EyebrowIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-      <path
-        d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
-        stroke="currentColor"
-        strokeOpacity="0.64"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
 export default function ScrapingSection() {
   return (
-    <div>
-      <div className="border-t border-[#e4e4e7] h-[2px] bg-white" />
-      <div className="w-full flex-1 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
-        <div className="w-full border-b border-[#e4e4e7] p-8 lg:pt-16 lg:pb-16">
-          <div className="mb-4 flex items-center gap-2 text-sm font-medium text-black/64 lg:justify-center">
-            <span className="text-[#18181b]">
-              <EyebrowIcon />
-            </span>
-            Scrape at scale
-          </div>
-          <div className="text-lg text-black/64 lg:mx-auto lg:max-w-[420px] lg:text-center">
-            <span className="font-medium text-[#18181b]">
-              Every page, turned into clean data
-            </span>{" "}
-            — your agent scrapes any site and structures it in seconds.
-          </div>
+    <div className="w-full min-w-0 border-r border-[#e4e4e7]">
+      <div className="h-[340px] flex items-center justify-center overflow-hidden">
+        <div className="relative h-[300px] w-full">
+          <Deck />
         </div>
-
-        <div className="relative flex justify-center px-8 py-14">
-          <div className="relative h-[380px] w-full max-w-[500px]">
-            <Deck />
-          </div>
+      </div>
+      <div className="p-6 flex flex-col gap-1">
+        <div className="flex items-center gap-1">
+          <TelescopeIcon
+            className="w-4.5 h-4.5 text-[#737373]"
+            strokeWidth={1.5}
+          />
+          <div className="font-medium text-[14px]">Research every source</div>
+        </div>
+        <div className="text-[#52525b] text-[13px] leading-[1.35]">
+          Agents comb competitors, reviews, and the open web — turning scattered
+          pages into clean signal, so every campaign starts from evidence, not a
+          hunch.
         </div>
       </div>
     </div>

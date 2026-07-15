@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react";
 import starImg from "@/src/assets/star.png";
-import img1 from "@/src/assets/img-1.png";
 import img2 from "@/src/assets/img-2.png";
 import img3 from "@/src/assets/img-3.webp";
 import Header from "@/src/components/header";
@@ -17,6 +16,7 @@ import ConnectYourAccounts from "@/src/components/connect-your-accounts";
 import AskAnyQuestionSection from "@/src/components/ask-any-question-section";
 import ResearchWebsitesSection from "@/src/components/research-websites-section";
 import ScrapingSection from "@/src/components/scraping-section";
+import AlwaysOptimisingSection from "@/src/components/always-optimising-section";
 import AgentRunsAccountSection from "@/src/components/agent-runs-account-section";
 
 export default function Home() {
@@ -177,36 +177,17 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="overflow-hidden">
+        <div className="border-t border-[#e4e4e7] h-[2px] bg-white" />
+        <div className="w-full flex-1 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7] grid grid-cols-2">
+          <ScrapingSection />
+          <AlwaysOptimisingSection />
+        </div>
+      </div>
+
       <CaseStudiesSection />
       <FaqSection />
       <TrustedBy />
-      {/* <div>
-        <div className="border-t border-[#e4e4e7] h-[2px] bg-white" />
-        <div className="pt-[80px] w-full flex-1 px-6 max-w-[1200px] mx-auto relative border-l border-r border-[#e4e4e7]">
-          <div className="mx-auto w-min relative p-3 pb-0 rounded-t-[21px] overflow-hidden border border-b-0 bg-[#18181B]/2 border-[#e4e4e7]">
-            <div className="flex justify-center pt-[1px] relative w-[1100px]">
-              <div className="!absolute left-0 top-0 right-0 h-[calc(100%+10px)] rounded-t-[9px]">
-                <div
-                  className="absolute inset-0 rounded-[9px]"
-                  style={{ boxShadow: "inset 0 0 0 1px #18181B10" }}
-                />
-              </div>
-              <div
-                className="w-[1100px] h-[410px] w-full pt-[1px] px-[1px] bg-white rounded-t-[9px]"
-                style={{
-                  boxShadow:
-                    "0 143px 40px 0 rgba(0,0,0,0),0 91px 37px 0 rgba(0,0,0,.01),0 51px 31px 0 rgba(0,0,0,.05),0 23px 23px 0 rgba(0,0,0,.09),0 6px 13px 0 rgba(0,0,0,.1)",
-                }}
-              >
-                <img
-                  src={img1.src}
-                  className="rounded-t-[8px] max-w-full h-[688px] w-full"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       <BenefitsSection />
       <Footer />
