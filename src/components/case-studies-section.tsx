@@ -2,9 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, type Variants } from "motion/react";
-import client1Img from "@/src/assets/clients/client-1.svg";
-import client2Img from "@/src/assets/clients/client-2.svg";
-import client3Img from "@/src/assets/clients/client-3.svg";
+import hucklebeeLogo from "@/src/assets/clients-real/hucklebee.png";
+import softmocLogo from "@/src/assets/clients-real/softmoc-v2.png";
+import frameItAllLogo from "@/src/assets/clients-real/frameitall.png";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -46,25 +46,25 @@ type CaseStudy = {
 
 const caseStudies: CaseStudy[] = [
   {
-    logo: client1Img,
-    company: "Mitsubishi Motors",
-    author: "Bob Kinney, VP Growth",
+    logo: hucklebeeLogo,
+    company: "HuckleBee Farms",
+    author: "James Douglas, CEO",
     quote:
-      "The agents pause our losing campaigns before we'd even notice them — we've cut wasted spend by 34% in a quarter.",
+      "We're already at $700K year-to-date, and it's not even the end of Q1. That's what I did in a full year, two years ago.",
   },
   {
-    logo: client2Img,
-    company: "Eight Sleep",
-    author: "Ana Ruiz, Head of Performance",
+    logo: softmocLogo,
+    company: "SoftMoc",
+    author: "~9x incremental ROAS",
     quote:
-      "It scaled our best-performing Meta ads overnight and doubled ROAS while we slept.",
+      "536 ads produced in ten weeks gave SoftMoc full-catalog coverage across Meta.",
   },
   {
-    logo: client3Img,
-    company: "Spar",
-    author: "Kenji Sato, Marketing Director",
+    logo: frameItAllLogo,
+    company: "Frame It All",
+    author: "Anthony, CEO",
     quote:
-      "Running Google, Meta, and Snapchat used to take a team of five. Now the agents handle it 24/7.",
+      "Our experience with Marketer has been very good, with excellent communication and collaboration to adjust the creatives as needed.",
   },
 ];
 
@@ -202,7 +202,7 @@ function Watermark({ logo }: { logo: { src: string } }) {
         src={logo.src}
         alt=""
         aria-hidden="true"
-        className="h-full w-full scale-[1.65] object-contain opacity-[0.04]"
+        className="h-full w-full scale-[1.65] object-contain opacity-[0.04] grayscale"
       />
     </div>
   );
